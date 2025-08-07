@@ -1,18 +1,19 @@
-# Local .terraform directories
-**/.terraform/*
-
-# Ignore variables files
-*.auto.tfvars
-
-# Ignore override files
-*.tfoverride
-
-# Ignore environment-specific files
-.envrc
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
+# Terraform files in infrastructure directory
+infrastructure/**/.terraform/
+infrastructure/**/.terraform.lock.hcl
+infrastructure/**/*.tfstate
+infrastructure/**/*.tfstate.*
+infrastructure/**/*.tfvars
+infrastructure/**/*.tfplan
+infrastructure/**/.terraformrc
+infrastructure/**/terraform.rc
+infrastructure/**/crash.log
+infrastructure/**/crash.*.log
+infrastructure/**/*.tfvars.example
+infrastructure/**/override.tf
+infrastructure/**/override.tf.json
+infrastructure/**/*_override.tf
+infrastructure/**/*_override.tf.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
